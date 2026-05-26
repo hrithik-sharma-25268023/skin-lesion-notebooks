@@ -10,6 +10,10 @@ dependencies:
 
   # Data Engineering
   - pandas
+  - numpy
+  - plotly
+  - matplotlib
+  - seaborn
 
   # Miscellaneous
   - tqdm
