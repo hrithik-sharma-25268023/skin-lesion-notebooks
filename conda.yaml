@@ -6,6 +6,7 @@ channels:
 dependencies:
   # Python and Jupyter
   - python=3.10.6
+  - pip  
   - ipykernel
 
   # Data Engineering
@@ -20,4 +21,5 @@ dependencies:
 
   # Testing and Code Quality
   - autopep8
+  - setuptools
   - pylint
