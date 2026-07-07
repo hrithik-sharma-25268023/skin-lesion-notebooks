@@ -1,25 +1,26 @@
 name: skin-lesion-notebooks
-
 channels:
   - conda-forge
-
 dependencies:
   # Python and Jupyter
   - python=3.10.6
-  - pip  
+  - pip
   - ipykernel
-
   # Data Engineering
   - pandas
-  - numpy
   - plotly
   - matplotlib
   - seaborn
-
   # Miscellaneous
   - tqdm
-
   # Testing and Code Quality
   - autopep8
   - setuptools
   - pylint
+
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - torch==2.4.1
+      - torchvision==0.19.1
+      - numpy<2
+      - -e ../skin-lesion-project

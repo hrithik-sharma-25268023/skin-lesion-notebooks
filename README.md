@@ -17,32 +17,23 @@ It uses the core implementation from the `skin-lesion-project` repository.
 
 ---
 
-## Dependency
+## Usage
 
 This project depends on the core package:
 
 ```
-skin-lesion-project
+conda activate skin-lesion-notebooks
+cd skin-lesion-project
+python setup.py develop
+pip install -e .
+
 ```
-
-
-## Project Structure
-
-```
-notebooks/
-│
-├── 01_eda.ipynb                  # Data exploration
-├── 02_cnn_training.ipynb         # CNN experiments
-├── 03_transformer_training.ipynb # Transformer experiments
-└── 04_comparison.ipynb           # Model comparison
-```
-
 ---
 
 ## Dataset
 
 * ISIC 2018 Skin Lesion Dataset
-* Multi-class classification (7 classes)
+* Multi-class classification (8 classes)
 
 ---
 
@@ -72,12 +63,6 @@ Results include:
 ## Objective
 
 To conduct a structured and reproducible experimental study comparing deep learning architectures for skin lesion classification.
-
----
-
-## Note
-
-This repository focuses on experimentation and analysis. All core implementations are maintained separately in the core repository.
 
 ---
 
